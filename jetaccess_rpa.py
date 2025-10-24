@@ -99,11 +99,14 @@ class JetAccessBot:
             selector2.select_by_index(2)
             # Click en el botón "Siguiente" antes de exportar
             self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.43'))).click()
-            # Descargar XLS
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.13.3'))).click()
-            time.sleep(3)
-            # Clic en regresar
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.13.7'))).click()
+            try:
+                # Descargar XLS
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.13.3'))).click()
+                time.sleep(3)
+                # Clic en regresar
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.13.7'))).click()          
+            except:
+                print(f"No hay reportes para descargar.")
 
             # Seleccionar Monterrey y descargar directamente
             select_element3 = self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.19')))
@@ -111,11 +114,14 @@ class JetAccessBot:
             selector3.select_by_index(3)
             # Click en el botón "Siguiente" antes de exportar
             self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.43'))).click()
-            # Descargar XLS
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
-            time.sleep(3)
-            # Clic en regresar
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
+            try:
+                # Descargar XLS
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
+                time.sleep(3)
+                # Clic en regresar
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
+            except:
+                print(f"No hay reportes para descargar.")
 
             # Seleccionar Guadalajara y descargar directamente
             select_element4 = self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.19')))
@@ -123,11 +129,14 @@ class JetAccessBot:
             selector4.select_by_index(4)
             # Click en el botón "Siguiente" antes de exportar
             self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.43'))).click()
-            # Descargar XLS
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
-            time.sleep(3)
-            # Clic en regresar
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
+            try:
+                # Descargar XLS
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
+                time.sleep(3)
+                # Clic en regresar
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
+            except:
+                print(f"No hay reportes para descargar.")
 
             # Seleccionar Hermosillo y descargar directamente
             select_element5 = self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.19')))
@@ -135,11 +144,14 @@ class JetAccessBot:
             selector5.select_by_index(5)
             # Click en el botón "Siguiente" antes de exportar
             self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.43'))).click()
-            # Descargar XLS
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
-            time.sleep(3)
-            # Clic en regresar
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
+            try:
+                # Descargar XLS
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
+                time.sleep(3)
+                # Clic en regresar
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
+            except:
+                print(f"No hay reportes para descargar.")
 
             # Seleccionar Tijuana y descargar directamente
             select_element6 = self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.19')))
@@ -147,23 +159,28 @@ class JetAccessBot:
             selector6.select_by_index(6)
             # Click en el botón "Siguiente" antes de exportar
             self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.43'))).click()
-            # Descargar XLS
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
-            time.sleep(3)
-            # Clic en regresar
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
-
+            try:
+                # Descargar XLS
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
+                time.sleep(3)
+                # Clic en regresar
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
+            except:
+                print(f"No hay reportes para descargar.")    
             # Seleccionar Nogales y descargar directamente
             select_element7 = self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.19')))
             selector7 = Select(select_element7)
             selector7.select_by_index(7)
             # Click en el botón "Siguiente" antes de exportar
             self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.43'))).click()
-            # Descargar XLS
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
-            time.sleep(3)
-            # Clic en regresar
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
+            try:    
+                # Descargar XLS
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
+                time.sleep(3)
+                # Clic en regresar
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
+            except:
+                print(f"No hay reportes para descargar.")
 
             # Seleccionar Monterrey_GC y descargar directamente
             select_element8 = self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.19')))
@@ -171,11 +188,14 @@ class JetAccessBot:
             selector8.select_by_index(8)
             # Click en el botón "Siguiente" antes de exportar
             self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.43'))).click()
-            # Descargar XLS
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
-            time.sleep(3)
-            # Clic en regresar
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
+            try:    
+                # Descargar XLS
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
+                time.sleep(3)
+                # Clic en regresar
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
+            except:
+                print(f"No hay reportes para descargar.")
 
             # Seleccionar Tultitlan y descargar directamente
             select_element9 = self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.19')))
@@ -183,11 +203,14 @@ class JetAccessBot:
             selector9.select_by_index(9)
             # Click en el botón "Siguiente" antes de exportar
             self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.43'))).click()
-            # Descargar XLS
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
-            time.sleep(3)
-            # Clic en regresar
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
+            try:
+                # Descargar XLS
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
+                time.sleep(3)
+                # Clic en regresar
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
+            except:
+                print(f"No hay reportes para descargar.")
 
             # Seleccionar Ciudad Juarez y descargar directamente
             select_element10 = self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.19')))
@@ -195,12 +218,14 @@ class JetAccessBot:
             selector10.select_by_index(10)
             # Click en el botón "Siguiente" antes de exportar
             self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.9.43'))).click()
-            # Descargar XLS
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
-            time.sleep(3)
-            # Clic en regresar
-            self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
-
+            try:    
+                # Descargar XLS
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.29'))).click()
+                time.sleep(3)
+                # Clic en regresar
+                self.wait.until(EC.presence_of_element_located((By.NAME, '3.0.1.3.7.InventoryReportsGrouped.1.5.0.1.11.61'))).click()
+            except:
+                print(f"No hay reportes para descargar.")
 
         except TimeoutException as e:
             print(f"❌ Error de tiempo de espera: El elemento no apareció. {e}")
